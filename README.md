@@ -31,47 +31,47 @@
 - Phần advanced details => user data, dán đoạn sau vào:
 
 * FE:
-  > #!/bin/bash -ex
-  > exec > >(tee /var/log/user-data.log|logger -t user-data -s 2>/dev/console) 2>&1
-  > curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-  > export NVM_DIR="$HOME/.nvm"
-> [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-> [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-  > nvm install node
-  > sudo rm /var/lib/apt/lists/lock
-  > sudo rm /var/cache/apt/archives/lock
-  > sudo rm /var/lib/dpkg/lock\*
-  > sudo apt update
-  > sudo apt install git
-  > sudo mkdir /home/ec2-user
-  > sudo chmod 777 /home/ec2-user
-  > cd /home/ec2-user
-  > git clone --single-branch -b master https://github.com/nguyennhi12/fe_cloud
-  > cd fe_cloud
-  > sudo chmod -R 755 .
-  > npm install
-  > npm start
+  > #!/bin/bash -ex <br>
+  > exec > >(tee /var/log/user-data.log|logger -t user-data -s 2>/dev/console) 2>&1 <br>
+  > curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash <br>
+  > export NVM_DIR="$HOME/.nvm" <br>
+> [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm <br>
+> [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" <br>
+  > nvm install node <br>
+  > sudo rm /var/lib/apt/lists/lock <br>
+  > sudo rm /var/cache/apt/archives/lock <br>
+  > sudo rm /var/lib/dpkg/lock\* <br>
+  > sudo apt update <br>
+  > sudo apt install git <br>
+  > sudo mkdir /home/ec2-user <br>
+  > sudo chmod 777 /home/ec2-user <br>
+  > cd /home/ec2-user <br>
+  > git clone --single-branch -b master https://github.com/nguyennhi12/fe_cloud <br>
+  > cd fe_cloud <br>
+  > sudo chmod -R 755 . <br>
+  > npm install <br>
+  > npm start <br>
 * BE:
-  > #!/bin/bash -ex
-  > exec > >(tee /var/log/user-data.log|logger -t user-data -s 2>/dev/console) 2>&1
-  > curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-  > export NVM_DIR="$HOME/.nvm"
-> [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-> [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-  > nvm install node
-  > sudo rm /var/lib/apt/lists/lock
-  > sudo rm /var/cache/apt/archives/lock
-  > sudo rm /var/lib/dpkg/lock\*
-  > sudo apt update
-  > sudo apt install git
-  > sudo mkdir /home/ec2-user
-  > sudo chmod 777 /home/ec2-user
-  > cd /home/ec2-user
-  > git clone --single-branch -b master https://github.com/nguyennhi12/be_cloud
-  > cd fe_cloud
-  > sudo chmod -R 755 .
-  > npm install
-  > npm start
+  > #!/bin/bash -ex <br>
+  > exec > >(tee /var/log/user-data.log|logger -t user-data -s 2>/dev/console) 2>&1 <br>
+  > curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash <br>
+  > export NVM_DIR="$HOME/.nvm" <br>
+> [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm <br>
+> [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" <br>
+  > nvm install node <br>
+  > sudo rm /var/lib/apt/lists/lock <br>
+  > sudo rm /var/cache/apt/archives/lock <br>
+  > sudo rm /var/lib/dpkg/lock\* <br>
+  > sudo apt update <br>
+  > sudo apt install git <br>
+  > sudo mkdir /home/ec2-user <br>
+  > sudo chmod 777 /home/ec2-user <br>
+  > cd /home/ec2-user <br>
+  > git clone --single-branch -b master https://github.com/nguyennhi12/be_cloud <br>
+  > cd fe_cloud <br>
+  > sudo chmod -R 755 . <br>
+  > npm install <br>
+  > npm start <br>
 
 - Nhấn tạo.
 
